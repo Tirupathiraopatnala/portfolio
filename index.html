@@ -3,21 +3,20 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Tirupathirao Patnala — AI Engineer</title>
+<title>Tirupathirao Patnala — AI &amp; Data Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#fafafa;--bg2:#f0f2f5;--bg3:#e8ebf0;
-  --ink:#111827;--ink2:#374151;--ink3:#6b7280;
-  --accent:#4f46e5;--accent-light:#eef2ff;
-  --border:#e5e7eb;--radius:12px;
+--bg:#fafafa;--bg2:#f0f2f5;--bg3:#e8ebf0;
+--ink:#111827;--ink2:#374151;--ink3:#6b7280;
+--accent:#4f46e5;--accent-light:#eef2ff;
+--border:#e5e7eb;--radius:12px;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;font-size:15px;line-height:1.7}
-
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,250,250,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 40px}
 .nav-logo{font-family:'Inter',sans-serif;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:.03em}
@@ -26,19 +25,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,250,250,
 .nav-links a:hover{color:var(--accent)}
 .nav-hire{background:var(--accent);color:#fff;font-size:13px;font-weight:500;padding:7px 18px;border-radius:8px;text-decoration:none;transition:opacity .2s}
 .nav-hire:hover{opacity:.88}
-
 /* SECTIONS */
 section{padding:96px 0 72px}
 .container{max-width:920px;margin:0 auto;padding:0 32px}
 .section-eyebrow{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
 .section-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,38px);font-weight:700;line-height:1.2;color:var(--ink)}
 .section-title em{font-style:italic;color:var(--accent)}
-
 /* HERO */
 #hero{padding-top:140px;padding-bottom:80px;background:var(--bg)}
 .hero-inner{display:flex;align-items:center;gap:56px}
 .photo-circle{width:200px;height:200px;border-radius:50%;border:3px solid var(--border);background:var(--bg3);overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.photo-circle img{width:100%;height:100%;object-fit:cover}
+.photo-circle img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}
 .photo-placeholder{font-size:52px;opacity:.35}
 .hero-greeting{font-size:13px;font-weight:500;color:var(--ink3);margin-bottom:12px;letter-spacing:.04em}
 .hero-name{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,52px);font-weight:700;line-height:1.1;color:var(--ink);margin-bottom:14px}
@@ -52,13 +49,11 @@ section{padding:96px 0 72px}
 .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
 .hero-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
 .chip{background:var(--accent-light);color:var(--accent);font-size:12px;font-weight:500;padding:3px 10px;border-radius:6px}
-
 /* ABOUT */
 #about{background:var(--bg)}
 .about-text{font-size:15px;color:var(--ink2);line-height:1.85;max-width:680px}
 .about-text p+p{margin-top:16px}
 .about-text strong{color:var(--ink);font-weight:600}
-
 /* PROJECTS */
 #projects{background:var(--bg2)}
 .projects-grid{display:grid;gap:20px;margin-top:40px}
@@ -71,7 +66,6 @@ section{padding:96px 0 72px}
 .proj-desc strong{color:var(--ink);font-weight:600}
 .proj-pills{display:flex;flex-wrap:wrap;gap:6px}
 .pill{background:var(--bg2);border:1px solid var(--border);border-radius:6px;font-size:12px;color:var(--ink2);padding:3px 9px}
-
 /* TIMELINE */
 #experience{background:var(--bg)}
 .timeline{margin-top:40px;position:relative}
@@ -88,7 +82,6 @@ section{padding:96px 0 72px}
 .tl-edu-icon{font-size:18px}
 .tl-edu-title{font-size:14px;font-weight:600;color:var(--ink)}
 .tl-edu-sub{font-size:12px;color:var(--ink3)}
-
 /* SKILLS */
 #skills{background:var(--bg2)}
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
@@ -96,7 +89,6 @@ section{padding:96px 0 72px}
 .skill-icon{font-size:22px;margin-bottom:12px}
 .skill-title{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:12px}
 .skill-pills{display:flex;flex-wrap:wrap;gap:6px}
-
 /* CERTS */
 #certs{background:var(--bg)}
 .certs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}
@@ -104,7 +96,6 @@ section{padding:96px 0 72px}
 .cert-badge{width:42px;height:42px;border-radius:9px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
 .cert-title{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
 .cert-sub{font-size:12px;color:var(--ink3)}
-
 /* CONTACT */
 #contact{background:var(--bg2);text-align:center}
 .contact-cards{display:flex;justify-content:center;gap:16px;margin-top:40px;flex-wrap:wrap}
@@ -113,20 +104,17 @@ section{padding:96px 0 72px}
 .contact-card-icon{font-size:24px;margin-bottom:10px}
 .contact-card-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:5px}
 .contact-card-val{font-size:14px;color:var(--ink);font-weight:500}
-
 footer{background:var(--ink);color:rgba(255,255,255,.5);text-align:center;padding:24px;font-size:12px}
 footer strong{color:#fff;font-weight:500}
-
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
 .reveal.visible{opacity:1;transform:none}
-
 @media(max-width:720px){
-  nav{padding:0 20px}.nav-links{display:none}
-  .hero-inner{flex-direction:column;gap:28px;text-align:center}.hero-cta,.hero-tags{justify-content:center}
-  .skills-grid{grid-template-columns:1fr 1fr}
-  .certs-grid{grid-template-columns:1fr}
-  .container{padding:0 20px}
-  .proj-header{flex-direction:column;gap:8px}
+nav{padding:0 20px}.nav-links{display:none}
+.hero-inner{flex-direction:column;gap:28px;text-align:center}.hero-cta,.hero-tags{justify-content:center}
+.skills-grid{grid-template-columns:1fr 1fr}
+.certs-grid{grid-template-columns:1fr}
+.container{padding:0 20px}
+.proj-header{flex-direction:column;gap:8px}
 }
 @media(max-width:480px){.skills-grid{grid-template-columns:1fr}}
 </style>
@@ -135,346 +123,406 @@ footer strong{color:#fff;font-weight:500}
 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-logo"></a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#certs">Awards</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="mailto:tirupathiraopatnala@gmail.com" class="nav-hire">Hire Me</a>
+<a href="#hero" class="nav-logo"></a>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#certs">Awards</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a href="mailto:tirupathiraopatnala@gmail.com" class="nav-hire">Hire Me</a>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="photo-circle">
+<div class="container">
+<div class="hero-inner">
+<div class="photo-circle">
 <img src="photo.png" alt="Tirupathirao Patnala" />
-      </div>
-      <div>
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Tirupathirao<br><em>Patnala</em></h1>
-        <p class="hero-sub">
-          <strong>AI Engineer</strong> designing enterprise-grade Generative AI systems. I build RAG pipelines, multi-agent systems, and NL2SQL copilots that solve real business problems at scale.
-        </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="#contact" class="btn-secondary">Get in Touch</a>
-        </div>
-        <div class="hero-tags">
-          <span class="chip">LLMs</span>
-          <span class="chip">RAG</span>
-          <span class="chip">Multi-Agent Systems</span>
-          <span class="chip">Vector Databases</span>
-          <span class="chip">Agentic AI</span>
-          <span class="chip">Prompt Engineering</span>
-          <span class="chip">NL2SQL</span>
-          <span class="chip">Embeddings</span>
-          <span class="chip">Semantic Search</span>
-          <span class="chip">LangChain</span>
-          <span class="chip">Semantic Kernel</span>
-          <span class="chip">Python</span>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+<div>
+<p class="hero-greeting">Hello, I'm</p>
+<h1 class="hero-name">Tirupathirao<br><em>Patnala</em></h1>
+<p class="hero-sub">
+<strong>AI and data engineer</strong> building agentic systems, RAG pipelines and the data plumbing underneath them. I like problems where the messy part is the data and the interesting part is deciding when a model helps and when it doesn't.
+</p>
+<div class="hero-cta">
+<a href="#projects" class="btn-primary">View Projects</a>
+<a href="#contact" class="btn-secondary">Get in Touch</a>
+</div>
+<div class="hero-tags">
+<span class="chip">LLMs</span>
+<span class="chip">RAG</span>
+<span class="chip">Agentic AI</span>
+<span class="chip">LangGraph</span>
+<span class="chip">MCP</span>
+<span class="chip">Data Pipelines</span>
+<span class="chip">Vector Search</span>
+<span class="chip">NL2SQL</span>
+<span class="chip">Semantic Kernel</span>
+<span class="chip">FastAPI</span>
+<span class="chip">Python</span>
+<span class="chip">SQL</span>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="container">
-    <p class="section-eyebrow reveal">About Me</p>
-    <h2 class="section-title reveal">AI Engineer <em>and Builder</em></h2>
-    <div class="about-text reveal" style="margin-top:28px;">
-      <p>I'm an AI Engineer with <strong>5 years of experience</strong> spanning data engineering and enterprise Generative AI. I design and ship production AI systems: RAG pipelines, NL2SQL assistants, multi-agent copilots, and intelligent workflow automation.</p>
-      <p>Before moving into AI, I spent 2 years as a Data Engineer building scalable ETL pipelines and data warehouse workflows. A notable achievement was designing a validation framework that cut error resolution from <strong>2 days to under 5 minutes</strong>.</p>
-      <p style="margin-top:20px;font-size:13px;color:var(--ink3)">Based in Hyderabad, India · Open to AI Engineer roles</p>
-    </div>
-  </div>
+<div class="container">
+<p class="section-eyebrow reveal">About Me</p>
+<h2 class="section-title reveal">Engineer <em>and Builder</em></h2>
+<div class="about-text reveal" style="margin-top:28px;">
+<p>I'm a senior software engineer with <strong>5 years of experience</strong> across data engineering and production Generative AI. I ship RAG pipelines, agentic systems with human approval in the loop, NL2SQL copilots, and the ingestion and enrichment pipelines that feed them.</p>
+<p>I started as a Data Engineer building ETL pipelines and warehouse workflows. One piece from that period was work nobody assigned me: a data validation framework that cut error resolution from <strong>2 days to under 5 minutes</strong>. It is <strong>still in use four years later</strong>.</p>
+<p>A lot of my best work started as something nobody asked for. The lead generation platform below began as a weekend curiosity and ended up in front of the sales team and the CEO. I'm most useful in places where the problem is still ambiguous and someone needs to go and figure it out.</p>
+<p style="margin-top:20px;font-size:13px;color:var(--ink3)">Based in Hyderabad, India · Open to AI and data engineering roles</p>
+</div>
+</div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <div class="container">
-    <p class="section-eyebrow reveal">Portfolio</p>
-    <h2 class="section-title reveal">Key <em>Projects</em></h2>
-    <div class="projects-grid">
+<div class="container">
+<p class="section-eyebrow reveal">Portfolio</p>
+<h2 class="section-title reveal">Key <em>Projects</em></h2>
+<div class="projects-grid">
 
-      <div class="proj-card reveal">
-        <div class="proj-header">
-          <p class="proj-title">n8n Knowledge Assistant</p>
-          <span class="proj-type">RAG + Multi-Agent</span>
-        </div>
-        <p class="proj-desc">
-          Enterprise chatbot that routes queries across internal and external knowledge sources using a <strong>classifier-based dispatcher</strong>. Internal path uses vector + semantic retrieval over indexed docs; external path runs a multi-stage pipeline with intent resolution, smart folder routing, and schema enrichment across a GitHub repo. Responses are merged and cited automatically.
-        </p>
-        <div class="proj-pills">
-          <span class="pill">LLMs</span><span class="pill">Semantic Kernel</span><span class="pill">Vector Search</span><span class="pill">Multi-Agent</span><span class="pill">CI/CD</span><span class="pill">SSO</span>
-        </div>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">B2B Lead Generation and Enrichment Platform</p>
+<span class="proj-type">Data Pipeline + LLM</span>
+</div>
+<p class="proj-desc">
+A multi-source pipeline that pulls company and contact records from <strong>LinkedIn, Apollo, Hunter.io and Google Maps</strong> and turns them into one qualified list. Two-stage LLM screening: intent classification over post comments, then a deeper qualification pass that scores each lead. Built the data quality layer that post-filters vendor results against their real industry classification, after keyword-tag matching started returning wildly irrelevant companies. Also <strong>removed the LLM from the company discovery flow entirely</strong> once it began inventing selection criteria, because deterministic filters turned out cheaper and more reliable. Every run is cancellable, so external API spend stops the moment you hit stop. Built on my own initiative and presented to the sales team and CEO.
+</p>
+<div class="proj-pills">
+<span class="pill">Azure OpenAI</span><span class="pill">Apollo</span><span class="pill">Apify</span><span class="pill">SSE</span><span class="pill">Data Quality</span><span class="pill">Cost Control</span>
+</div>
+</div>
 
-      <div class="proj-card reveal">
-        <div class="proj-header">
-          <p class="proj-title">NL2SQL Conversational Copilot</p>
-          <span class="proj-type">NL2SQL + Visualisation</span>
-        </div>
-        <p class="proj-desc">
-          Copilot that lets non-technical users query enterprise data in plain English and get <strong>interactive charts</strong> instantly. Uses a four-plugin architecture: table selection, filter resolution via vector search, schema-grounded SQL generation, and execution against Azure SQL Database. Results rendered as interactive visualisations.
-        </p>
-        <div class="proj-pills">
-          <span class="pill">Semantic Kernel</span><span class="pill">LLMs</span><span class="pill">Vector Search</span><span class="pill">Plotly</span><span class="pill">Dash</span><span class="pill">Postgres</span>
-        </div>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">Microsoft Graph Connector for Vimeo</p>
+<span class="proj-type">Enterprise Integration</span>
+</div>
+<p class="proj-desc">
+A Graph connector that indexes internal Vimeo video content so <strong>Microsoft Copilot can search across it</strong>. Indexing runs at segment level with timestamp deep links, so a search result drops you at the exact moment in the video rather than at the start. Built two paths: a synced Graph connector that reached production demo, and a federated MCP server.
+</p>
+<div class="proj-pills">
+<span class="pill">Microsoft Graph</span><span class="pill">MCP</span><span class="pill">Copilot</span><span class="pill">REST APIs</span><span class="pill">Python</span>
+</div>
+</div>
 
-      <div class="proj-card reveal">
-        <div class="proj-header">
-          <p class="proj-title">AI-Powered Sales Assistant</p>
-          <span class="proj-type">Conversational AI</span>
-        </div>
-        <p class="proj-desc">
-          Conversational AI for sales teams to get instant answers on product availability, capacity, and compliance during live calls. Iterated through three frameworks (Copilot Studio, LangChain, Semantic Kernel) before production. Each dataset has a dedicated vector index with <strong>per-tool retrieval</strong> and runtime query routing.
-        </p>
-        <div class="proj-pills">
-          <span class="pill">Semantic Kernel</span><span class="pill">Vector Search</span><span class="pill">Cosmos DB</span><span class="pill">Streamlit</span><span class="pill">Power BI</span>
-        </div>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">InstaSeat</p>
+<span class="proj-type">Personal Project</span>
+</div>
+<p class="proj-desc">
+A virtual queue and pre-order system for restaurant walk-in diners, built for the <strong>Swiggy Builders Club</strong>. FastAPI backend with a queue engine that models wait-time ETAs, MCP clients for Swiggy Food and Dineout using OAuth 2.1 PKCE, a fuzzy restaurant name matcher for when listings do not agree with each other, and two interfaces: a diner chat and a host console. Shipped as a complete working demo.
+</p>
+<div class="proj-pills">
+<span class="pill">FastAPI</span><span class="pill">MCP</span><span class="pill">OAuth 2.1 PKCE</span><span class="pill">Queue Modelling</span><span class="pill">Python</span>
+</div>
+</div>
 
-      <div class="proj-card reveal">
-        <div class="proj-header">
-          <p class="proj-title">RAG Chatbot for Enterprise Documentation</p>
-          <span class="proj-type">RAG</span>
-        </div>
-        <p class="proj-desc">
-          RAG assistant for navigating complex enterprise platform docs via natural language. Built a full ingestion pipeline: doc conversion, chunking, embedding, and vector indexing. Retrieval orchestrated with prompt flow combining search results, session history, and custom prompt variants for grounded answers.
-        </p>
-        <div class="proj-pills">
-          <span class="pill">Prompt Flow</span><span class="pill">Vector Search</span><span class="pill">Embeddings</span><span class="pill">LLMs</span><span class="pill">Flask</span>
-        </div>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">n8n Knowledge Assistant</p>
+<span class="proj-type">RAG + Multi-Agent</span>
+</div>
+<p class="proj-desc">
+Enterprise chatbot that routes queries across internal and external knowledge sources using a <strong>classifier-based dispatcher</strong>. Internal path uses vector and semantic retrieval over indexed docs; external path runs a multi-stage pipeline with intent resolution, document discovery and schema enrichment across a GitHub repo via MCP. Both paths run in parallel and get merged, which keeps latency down. Conversation traces and user feedback are captured and fed into a DeepEval loop to reduce hallucination over time.
+</p>
+<div class="proj-pills">
+<span class="pill">Semantic Kernel</span><span class="pill">Azure AI Search</span><span class="pill">GitHub MCP</span><span class="pill">DeepEval</span><span class="pill">CI/CD</span><span class="pill">SSO</span>
+</div>
+</div>
 
-      <div class="proj-card reveal">
-        <div class="proj-header">
-          <p class="proj-title">Workflow Automation Platform</p>
-          <span class="proj-type">Infrastructure + Automation</span>
-        </div>
-        <p class="proj-desc">
-          Deployed and enterprise-hardened an n8n workflow automation platform on Kubernetes, serving thousands of employees. Configured application gateway, SSL, secret management, and SSO. Cleared security, privacy, and data governance reviews before rollout.
-        </p>
-        <div class="proj-pills">
-          <span class="pill">Kubernetes</span><span class="pill">Key Vault</span><span class="pill">Application Gateway</span><span class="pill">n8n</span><span class="pill">SSL</span>
-        </div>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">NL2SQL Conversational Copilot</p>
+<span class="proj-type">NL2SQL + Visualisation</span>
+</div>
+<p class="proj-desc">
+Copilot that lets non-technical users query enterprise data in plain English and get <strong>interactive charts</strong> back. Four-plugin architecture: table selection, filter resolution via vector search, schema-grounded SQL generation, and execution. Results render as interactive visualisations rather than raw rows.
+</p>
+<div class="proj-pills">
+<span class="pill">Semantic Kernel</span><span class="pill">Vector Search</span><span class="pill">Plotly</span><span class="pill">Dash</span><span class="pill">Postgres</span>
+</div>
+</div>
 
-      <div class="proj-card reveal">
-        <div class="proj-header">
-          <p class="proj-title">EvoAgent: Self-Evolving AI System</p>
-          <span class="proj-type">Hackathon</span>
-        </div>
-        <p class="proj-desc">
-          Developed during an internal hackathon — an agentic system where AI agents autonomously evolve strategies through execution feedback, inspired by evolutionary algorithms. Applied to SQL optimisation: agents generate, execute, measure, and iteratively refine query plans without human intervention.
-        </p>
-        <div class="proj-pills">
-          <span class="pill">Multi-Agent</span><span class="pill">LLMs</span><span class="pill">Evolutionary AI</span><span class="pill">Python</span>
-        </div>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">AI-Powered Sales Assistant</p>
+<span class="proj-type">Conversational AI</span>
+</div>
+<p class="proj-desc">
+Conversational assistant for sales teams to get instant answers on product availability, capacity and compliance during live customer calls. Evaluated three frameworks (Copilot Studio, LangChain, Semantic Kernel) before committing. Each dataset gets a dedicated vector index with <strong>per-tool retrieval</strong> and runtime query routing.
+</p>
+<div class="proj-pills">
+<span class="pill">Semantic Kernel</span><span class="pill">Vector Search</span><span class="pill">Cosmos DB</span><span class="pill">Streamlit</span><span class="pill">Power BI</span>
+</div>
+</div>
 
-      <div class="proj-card reveal">
-        <div class="proj-header">
-          <p class="proj-title">IPL Analytics</p>
-          <span class="proj-type">Personal Project</span>
-        </div>
-        <p class="proj-desc">
-          Interactive web app to compare and analyse IPL team performances across 16 seasons (2008–2023). Features head-to-head matchups, venue-specific stats, bowling analysis, and batting leaderboards. Live at <a href="https://ipl-stats.streamlit.app/" target="_blank" style="color:var(--accent);font-weight:500">ipl-stats.streamlit.app</a>
-        </p>
-        <div class="proj-pills">
-          <span class="pill">Python</span><span class="pill">Streamlit</span><span class="pill">Pandas</span><span class="pill">Data Analytics</span>
-        </div>
-      </div>
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">RAG Chatbot for Enterprise Documentation</p>
+<span class="proj-type">RAG</span>
+</div>
+<p class="proj-desc">
+RAG assistant for navigating complex enterprise platform docs in natural language. Built the full ingestion pipeline: document conversion, chunking, embedding and vector indexing. Retrieval orchestrated with prompt flow combining search results, session history and custom prompt variants for grounded answers.
+</p>
+<div class="proj-pills">
+<span class="pill">Prompt Flow</span><span class="pill">Vector Search</span><span class="pill">Embeddings</span><span class="pill">LLMs</span><span class="pill">Flask</span>
+</div>
+</div>
 
-    </div>
-  </div>
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">Workflow Automation Platform</p>
+<span class="proj-type">Infrastructure + Automation</span>
+</div>
+<p class="proj-desc">
+Self-hosted and enterprise-hardened an n8n workflow automation platform on Kubernetes, rolled out across a 5,000-employee organisation and reaching around 300 active users who build their own workflows. Application gateway with WAF, SSL, Key Vault secrets, private networking and SSO. Cleared security, privacy and data governance review before rollout.
+</p>
+<div class="proj-pills">
+<span class="pill">Kubernetes</span><span class="pill">Key Vault</span><span class="pill">Application Gateway</span><span class="pill">n8n</span><span class="pill">Private Endpoints</span>
+</div>
+</div>
+
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">EvoAgent: Self-Evolving SQL Optimiser</p>
+<span class="proj-type">Hackathon Winner</span>
+</div>
+<p class="proj-desc">
+Built during an internal hackathon and <strong>won the season</strong>. An agentic system where agents evolve strategies through execution feedback, inspired by evolutionary algorithms. Applied to SQL optimisation: agents generate a query plan, execute it, measure the result, and refine the next generation without human intervention.
+</p>
+<div class="proj-pills">
+<span class="pill">Multi-Agent</span><span class="pill">LLMs</span><span class="pill">Evolutionary AI</span><span class="pill">Azure Synapse</span><span class="pill">Python</span>
+</div>
+</div>
+
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">IPL Analytics</p>
+<span class="proj-type">Personal Project</span>
+</div>
+<p class="proj-desc">
+Interactive web app to compare and analyse IPL team performances across 16 seasons (2008 to 2023). Head-to-head matchups, venue-specific stats, bowling analysis and batting leaderboards. Live at <a href="https://ipl-stats.streamlit.app/" target="_blank" style="color:var(--accent);font-weight:500">ipl-stats.streamlit.app</a>
+</p>
+<div class="proj-pills">
+<span class="pill">Python</span><span class="pill">Streamlit</span><span class="pill">Pandas</span><span class="pill">Data Analytics</span>
+</div>
+</div>
+
+</div>
+</div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <div class="container">
-    <p class="section-eyebrow reveal">Career</p>
-    <h2 class="section-title reveal">Professional <em>Journey</em></h2>
-    <div class="timeline" style="margin-top:48px;">
+<div class="container">
+<p class="section-eyebrow reveal">Career</p>
+<h2 class="section-title reveal">Professional <em>Journey</em></h2>
+<div class="timeline" style="margin-top:48px;">
 
-      <div class="tl-item reveal">
-        <div class="tl-left"><div class="tl-dot"></div></div>
-        <div>
-          <p class="tl-date">Jul 2023 – Present</p>
-          <p class="tl-role">AI Engineer</p>
-          <p class="tl-company">IT Services · Hyderabad, India</p>
-          <p class="tl-desc">Designing and shipping production Generative AI systems: RAG chatbots, NL2SQL copilots, multi-agent platforms, and intelligent automation. Working across LLMs, orchestration frameworks, vector databases, and cloud infrastructure.</p>
-        </div>
-      </div>
+<div class="tl-item reveal">
+<div class="tl-left"><div class="tl-dot"></div></div>
+<div>
+<p class="tl-date">Jul 2023 – Present</p>
+<p class="tl-role">Senior Software Engineer (AI and Data)</p>
+<p class="tl-company">IT Services · Hyderabad, India</p>
+<p class="tl-desc">Designing and shipping production Generative AI: agentic orchestrators with human approval on write actions, RAG systems, NL2SQL copilots, MCP integrations, and the data platform work underneath them.</p>
+</div>
+</div>
 
-      <div class="tl-item reveal">
-        <div class="tl-left"><div class="tl-dot muted"></div></div>
-        <div>
-          <p class="tl-date">Nov 2020 – Jul 2023</p>
-          <p class="tl-role">Data Engineer</p>
-          <p class="tl-company">IT Services · Hyderabad, India</p>
-          <p class="tl-desc">Built ETL pipelines integrating enterprise systems including Salesforce, Oracle Fusion, and ServiceNow. Designed data warehouse workflows, built a validation framework that reduced error resolution from 2 days to under 5 minutes, and automated reporting via REST APIs.</p>
-        </div>
-      </div>
+<div class="tl-item reveal">
+<div class="tl-left"><div class="tl-dot muted"></div></div>
+<div>
+<p class="tl-date">Jul 2021 – Jul 2023</p>
+<p class="tl-role">Data Engineer</p>
+<p class="tl-company">IT Services · Hyderabad, India</p>
+<p class="tl-desc">Built ETL pipelines integrating Salesforce, Oracle Fusion, ServiceNow and FNT, plus Azure Synapse pipelines for operational data. Designed a validation framework that cut error resolution from 2 days to under 5 minutes, and automated reporting maintenance through REST APIs.</p>
+</div>
+</div>
 
-      <div class="tl-item reveal">
-        <div class="tl-left"><div class="tl-dot muted"></div></div>
-        <div>
-          <p class="tl-date">2017 – 2021</p>
-          <div class="tl-edu">
-            <span class="tl-edu-icon">🎓</span>
-            <div>
-              <p class="tl-edu-title">B.Tech — Vasireddy Venkatadri Institute of Technology (VVIT)</p>
-              <p class="tl-edu-sub">CGPA: 8.21</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="tl-item reveal">
+<div class="tl-left"><div class="tl-dot muted"></div></div>
+<div>
+<p class="tl-date">Nov 2020 – Jun 2021</p>
+<p class="tl-role">Data Engineering Intern</p>
+<p class="tl-company">IT Services · Hyderabad, India</p>
+<p class="tl-desc">ETL development with ODI 12c and SSIS, writing SQL and Python for data processing and transformation logic. Converted to full-time in July 2021.</p>
+</div>
+</div>
 
-    </div>
-  </div>
+<div class="tl-item reveal">
+<div class="tl-left"><div class="tl-dot muted"></div></div>
+<div>
+<p class="tl-date">2017 – 2021</p>
+<div class="tl-edu">
+<span class="tl-edu-icon">🎓</span>
+<div>
+<p class="tl-edu-title">B.Tech — Vasireddy Venkatadri Institute of Technology (VVIT)</p>
+<p class="tl-edu-sub">CGPA: 8.21</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-  <div class="container">
-    <p class="section-eyebrow reveal">Expertise</p>
-    <h2 class="section-title reveal">Skills and <em>Technologies</em></h2>
-    <div class="skills-grid">
+<div class="container">
+<p class="section-eyebrow reveal">Expertise</p>
+<h2 class="section-title reveal">Skills and <em>Technologies</em></h2>
+<div class="skills-grid">
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">🤖</div>
-        <p class="skill-title">AI Engineering</p>
-        <div class="skill-pills">
-          <span class="pill">LLMs</span><span class="pill">RAG</span>
-          <span class="pill">Multi-Agent Systems</span><span class="pill">Prompt Engineering</span>
-          <span class="pill">Agentic AI</span><span class="pill">NL2SQL</span>
-          <span class="pill">Embeddings</span><span class="pill">Fine-Tuning</span>
-        </div>
-      </div>
+<div class="skill-card reveal">
+<div class="skill-icon">🤖</div>
+<p class="skill-title">AI Engineering</p>
+<div class="skill-pills">
+<span class="pill">LLMs</span><span class="pill">RAG</span>
+<span class="pill">Agentic Systems</span><span class="pill">Tool Calling</span>
+<span class="pill">Prompt Engineering</span><span class="pill">NL2SQL</span>
+<span class="pill">Embeddings</span><span class="pill">LLM Evaluation</span>
+<span class="pill">Human-in-the-Loop</span>
+</div>
+</div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">🧠</div>
-        <p class="skill-title">Frameworks and Tools</p>
-        <div class="skill-pills">
-          <span class="pill">Semantic Kernel</span><span class="pill">LangChain</span>
-          <span class="pill">Prompt Flow</span><span class="pill">Chainlit</span>
-          <span class="pill">Streamlit</span><span class="pill">FAISS</span>
-        </div>
-      </div>
+<div class="skill-card reveal">
+<div class="skill-icon">🧠</div>
+<p class="skill-title">Frameworks and Tools</p>
+<div class="skill-pills">
+<span class="pill">LangGraph</span><span class="pill">LangChain</span>
+<span class="pill">Semantic Kernel</span><span class="pill">MCP</span>
+<span class="pill">Prompt Flow</span><span class="pill">DeepEval</span>
+<span class="pill">Chainlit</span><span class="pill">Streamlit</span>
+</div>
+</div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">🗄️</div>
-        <p class="skill-title">Vector Databases and Search</p>
-        <div class="skill-pills">
-          <span class="pill">Vector Databases</span><span class="pill">Semantic Search</span>
-          <span class="pill">Hybrid Retrieval</span><span class="pill">Embeddings</span>
-          <span class="pill">FAISS</span>
-        </div>
-      </div>
+<div class="skill-card reveal">
+<div class="skill-icon">🗄️</div>
+<p class="skill-title">Models and Retrieval</p>
+<div class="skill-pills">
+<span class="pill">Azure OpenAI</span><span class="pill">Claude</span>
+<span class="pill">Azure AI Search</span><span class="pill">FAISS</span>
+<span class="pill">Chroma</span><span class="pill">Hybrid Retrieval</span>
+</div>
+</div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">☁️</div>
-        <p class="skill-title">Cloud and Infrastructure</p>
-        <div class="skill-pills">
-          <span class="pill">Kubernetes</span><span class="pill">Cloud Services</span>
-          <span class="pill">CI/CD</span><span class="pill">Cosmos DB</span>
-          <span class="pill">Terraform</span><span class="pill">Docker</span>
-        </div>
-      </div>
+<div class="skill-card reveal">
+<div class="skill-icon">☁️</div>
+<p class="skill-title">Cloud and Infrastructure</p>
+<div class="skill-pills">
+<span class="pill">Kubernetes</span><span class="pill">Azure</span>
+<span class="pill">Docker</span><span class="pill">Terraform</span>
+<span class="pill">GitHub Actions</span><span class="pill">Key Vault</span>
+<span class="pill">Entra ID / OAuth2</span>
+</div>
+</div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">💻</div>
-        <p class="skill-title">Languages and Data</p>
-        <div class="skill-pills">
-          <span class="pill">Python</span><span class="pill">SQL</span>
-          <span class="pill">REST APIs</span><span class="pill">ETL Pipelines</span>
-          <span class="pill">Postgres</span><span class="pill">Data Modelling</span>
-        </div>
-      </div>
+<div class="skill-card reveal">
+<div class="skill-icon">💻</div>
+<p class="skill-title">Languages and Backend</p>
+<div class="skill-pills">
+<span class="pill">Python</span><span class="pill">SQL</span>
+<span class="pill">FastAPI</span><span class="pill">REST APIs</span>
+<span class="pill">SSE</span><span class="pill">Postgres</span>
+<span class="pill">Cosmos DB</span>
+</div>
+</div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">📊</div>
-        <p class="skill-title">Visualisation and Analytics</p>
-        <div class="skill-pills">
-          <span class="pill">Plotly</span><span class="pill">Dash</span>
-          <span class="pill">Power BI</span><span class="pill">Streamlit</span>
-        </div>
-      </div>
+<div class="skill-card reveal">
+<div class="skill-icon">📊</div>
+<p class="skill-title">Data Engineering</p>
+<div class="skill-pills">
+<span class="pill">Azure Synapse</span><span class="pill">Microsoft Fabric</span>
+<span class="pill">PySpark</span><span class="pill">Delta / Parquet</span>
+<span class="pill">ETL / ELT</span><span class="pill">Data Modelling</span>
+<span class="pill">Power BI</span>
+</div>
+</div>
 
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <!-- CERTS AND AWARDS -->
 <section id="certs">
-  <div class="container">
-    <p class="section-eyebrow reveal">Credentials</p>
-    <h2 class="section-title reveal"><em>Certifications</em> and Awards</h2>
-    <div class="certs-grid">
-      <div class="cert-card reveal">
-        <div class="cert-badge">📜</div>
-        <div><p class="cert-title">Azure AI Engineer Associate (AI-102)</p><p class="cert-sub">Microsoft Certified</p></div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-badge">🏆</div>
-        <div><p class="cert-title">Rising Achiever 2024-25</p><p class="cert-sub">Outstanding performance in AI engineering</p></div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-badge">🥇</div>
-        <div><p class="cert-title">Market Readiness Award</p><p class="cert-sub">Internal hackathon — Built an AI-powered HR chatbot for the organisation</p></div>
-      </div>
-      <div class="cert-card reveal">
-        <div class="cert-badge">🧠</div>
-        <div><p class="cert-title">The Brainiac 2022</p><p class="cert-sub">Innovation and technical excellence</p></div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<p class="section-eyebrow reveal">Credentials</p>
+<h2 class="section-title reveal"><em>Certifications</em> and Awards</h2>
+<div class="certs-grid">
+<div class="cert-card reveal">
+<div class="cert-badge">📜</div>
+<div><p class="cert-title">Azure AI Engineer Associate (AI-102)</p><p class="cert-sub">Microsoft Certified</p></div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-badge">🏆</div>
+<div><p class="cert-title">Tenacious Trailblazer 2026</p><p class="cert-sub">Outstanding performance and dedication</p></div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-badge">⭐</div>
+<div><p class="cert-title">Rising Achiever 2024-25</p><p class="cert-sub">Outstanding performance in AI engineering</p></div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-badge">🥇</div>
+<div><p class="cert-title">Hackathon Winner and Market Readiness Award</p><p class="cert-sub">EvoAgent (season 2 winner) and an internal AI chatbot (season 1)</p></div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-badge">🧠</div>
+<div><p class="cert-title">The Brainiac 2022</p><p class="cert-sub">Innovation and technical excellence</p></div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="container">
-    <p class="section-eyebrow reveal">Get In Touch</p>
-    <h2 class="section-title reveal">Let's <em>Connect</em></h2>
-    <p class="reveal" style="color:var(--ink2);margin-top:12px;max-width:460px;margin-left:auto;margin-right:auto;">Open to AI Engineer roles, collaborations, or a quick conversation about Generative AI.</p>
-    <div class="contact-cards">
-      <a href="mailto:tirupathiraopatnala@gmail.com" class="contact-card reveal">
-        <div class="contact-card-icon">✉️</div>
-        <p class="contact-card-label">Email</p>
-        <p class="contact-card-val">tirupathiraopatnala@gmail.com</p>
-      </a>
-      <a href="https://www.linkedin.com/in/tirupathirao-patnala-b0250b169/" target="_blank" class="contact-card reveal">
-        <div class="contact-card-icon">💼</div>
-        <p class="contact-card-label">LinkedIn</p>
-        <p class="contact-card-val">tirupathirao-patnala</p>
-      </a>
-      <a href="https://github.com/Tirupathiraopatnala" target="_blank" class="contact-card reveal">
-        <div class="contact-card-icon">🐙</div>
-        <p class="contact-card-label">GitHub</p>
-        <p class="contact-card-val">Tirupathiraopatnala</p>
-      </a>
-    </div>
-  </div>
+<div class="container">
+<p class="section-eyebrow reveal">Get In Touch</p>
+<h2 class="section-title reveal">Let's <em>Connect</em></h2>
+<p class="reveal" style="color:var(--ink2);margin-top:12px;max-width:460px;margin-left:auto;margin-right:auto;">Open to AI and data engineering roles, collaborations, or a quick conversation about building with models.</p>
+<div class="contact-cards">
+<a href="mailto:tirupathiraopatnala@gmail.com" class="contact-card reveal">
+<div class="contact-card-icon">✉️</div>
+<p class="contact-card-label">Email</p>
+<p class="contact-card-val">tirupathiraopatnala@gmail.com</p>
+</a>
+<a href="https://www.linkedin.com/in/tirupathirao-patnala-b0250b169/" target="_blank" class="contact-card reveal">
+<div class="contact-card-icon">💼</div>
+<p class="contact-card-label">LinkedIn</p>
+<p class="contact-card-val">tirupathirao-patnala</p>
+</a>
+<a href="https://github.com/Tirupathiraopatnala" target="_blank" class="contact-card reveal">
+<div class="contact-card-icon">🐙</div>
+<p class="contact-card-label">GitHub</p>
+<p class="contact-card-val">Tirupathiraopatnala</p>
+</a>
+</div>
+</div>
 </section>
 
 <footer>
-  <strong>Tirupathirao Patnala</strong> · AI Engineer · Hyderabad, India · Open to AI Engineer roles
+<strong>Tirupathirao Patnala</strong> · AI and Data Engineer · Hyderabad, India
 </footer>
 
 <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 </body>
 </html>
