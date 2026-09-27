@@ -65,6 +65,9 @@ section{padding:96px 0 72px}
 .proj-desc{font-size:14px;color:var(--ink2);line-height:1.8;margin-bottom:16px}
 .proj-desc strong{color:var(--ink);font-weight:600}
 .proj-pills{display:flex;flex-wrap:wrap;gap:6px}
+.proj-links{display:flex;gap:14px;margin-bottom:14px}
+.proj-link{font-size:13px;font-weight:500;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.proj-link:hover{text-decoration:underline}
 .pill{background:var(--bg2);border:1px solid var(--border);border-radius:6px;font-size:12px;color:var(--ink2);padding:3px 9px}
 /* TIMELINE */
 #experience{background:var(--bg)}
@@ -200,6 +203,9 @@ nav{padding:0 20px}.nav-links{display:none}
 <p class="proj-desc">
 A multi-source pipeline that pulls company and contact records from <strong>LinkedIn, Apollo, Hunter.io and Google Maps</strong> and turns them into one qualified list. Two-stage LLM screening: intent classification over post comments, then a deeper qualification pass that scores each lead. Built the data quality layer that post-filters vendor results against their real industry classification, after keyword-tag matching started returning wildly irrelevant companies. Also <strong>removed the LLM from the company discovery flow entirely</strong> once it began inventing selection criteria, because deterministic filters turned out cheaper and more reliable. Every run is cancellable, so external API spend stops the moment you hit stop. Built on my own initiative and presented to the sales team and CEO.
 </p>
+<div class="proj-links">
+<a class="proj-link" href="https://github.com/Tirupathiraopatnala/LeadGeneration_Linkedin" target="_blank">View on GitHub &rarr;</a>
+</div>
 <div class="proj-pills">
 <span class="pill">Azure OpenAI</span><span class="pill">Apollo</span><span class="pill">Apify</span><span class="pill">SSE</span><span class="pill">Data Quality</span><span class="pill">Cost Control</span>
 </div>
@@ -226,6 +232,9 @@ A Graph connector that indexes internal Vimeo video content so <strong>Microsoft
 <p class="proj-desc">
 A virtual queue and pre-order system for restaurant walk-in diners, built for the <strong>Swiggy Builders Club</strong>. FastAPI backend with a queue engine that models wait-time ETAs, MCP clients for Swiggy Food and Dineout using OAuth 2.1 PKCE, a fuzzy restaurant name matcher for when listings do not agree with each other, and two interfaces: a diner chat and a host console. Shipped as a complete working demo.
 </p>
+<div class="proj-links">
+<a class="proj-link" href="https://github.com/Tirupathiraopatnala/InstaSeat" target="_blank">View on GitHub &rarr;</a>
+</div>
 <div class="proj-pills">
 <span class="pill">FastAPI</span><span class="pill">MCP</span><span class="pill">OAuth 2.1 PKCE</span><span class="pill">Queue Modelling</span><span class="pill">Python</span>
 </div>
@@ -304,6 +313,9 @@ Self-hosted and enterprise-hardened an n8n workflow automation platform on Kuber
 <p class="proj-desc">
 Built during an internal hackathon and <strong>won the season</strong>. An agentic system where agents evolve strategies through execution feedback, inspired by evolutionary algorithms. Applied to SQL optimisation: agents generate a query plan, execute it, measure the result, and refine the next generation without human intervention.
 </p>
+<div class="proj-links">
+<a class="proj-link" href="https://github.com/Tirupathiraopatnala/evosql" target="_blank">View on GitHub &rarr;</a>
+</div>
 <div class="proj-pills">
 <span class="pill">Multi-Agent</span><span class="pill">LLMs</span><span class="pill">Evolutionary AI</span><span class="pill">Azure Synapse</span><span class="pill">Python</span>
 </div>
@@ -315,8 +327,11 @@ Built during an internal hackathon and <strong>won the season</strong>. An agent
 <span class="proj-type">Personal Project</span>
 </div>
 <p class="proj-desc">
-Interactive web app to compare and analyse IPL team performances across 16 seasons (2008 to 2023). Head-to-head matchups, venue-specific stats, bowling analysis and batting leaderboards. Live at <a href="https://ipl-stats.streamlit.app/" target="_blank" style="color:var(--accent);font-weight:500">ipl-stats.streamlit.app</a>
+Interactive web app to compare and analyse IPL team performances across 16 seasons (2008 to 2023). Head-to-head matchups, venue-specific stats, bowling analysis and batting leaderboards.
 </p>
+<div class="proj-links">
+<a class="proj-link" href="https://ipl-stats.streamlit.app/" target="_blank">Live app &rarr;</a>
+</div>
 <div class="proj-pills">
 <span class="pill">Python</span><span class="pill">Streamlit</span><span class="pill">Pandas</span><span class="pill">Data Analytics</span>
 </div>
