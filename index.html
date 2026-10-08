@@ -40,6 +40,7 @@ section{padding:96px 0 72px}
 .hero-greeting{font-size:13px;font-weight:500;color:var(--ink3);margin-bottom:12px;letter-spacing:.04em}
 .hero-name{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,52px);font-weight:700;line-height:1.1;color:var(--ink);margin-bottom:14px}
 .hero-name em{font-style:italic;color:var(--accent)}
+.hero-name .hero-hl{color:var(--accent)}
 .hero-sub{font-size:15px;color:var(--ink2);max-width:480px;line-height:1.7;margin-bottom:24px}
 .hero-sub strong{color:var(--ink);font-weight:600}
 .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
@@ -147,7 +148,7 @@ nav{padding:0 20px}.nav-links{display:none}
 </div>
 <div>
 <p class="hero-greeting">Hello, I'm</p>
-<h1 class="hero-name">Tirupathirao<br><em>Patnala</em></h1>
+<h1 class="hero-name"><span class="hero-hl">Tiru</span>pathirao<br>Patnala</h1>
 <p class="hero-sub">
 <strong>AI and data engineer</strong> building agentic systems, RAG pipelines and the data plumbing underneath them. I like problems where the messy part is the data and the interesting part is deciding when a model helps and when it doesn't.
 </p>
@@ -318,6 +319,22 @@ Built during an internal hackathon and <strong>won the season</strong>. An agent
 </div>
 <div class="proj-pills">
 <span class="pill">Multi-Agent</span><span class="pill">LLMs</span><span class="pill">Evolutionary AI</span><span class="pill">Azure Synapse</span><span class="pill">Python</span>
+</div>
+</div>
+
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">Content Translation Agent</p>
+<span class="proj-type">Personal Project</span>
+</div>
+<p class="proj-desc">
+Translates the text in digital PDFs, scanned PDFs and images into <strong>Hindi, Tamil, Bengali, Punjabi and Gujarati</strong> and renders it back onto the original page, tested on comic-style school textbook pages full of speech bubbles. Each page goes through four stages: OCR with bounding boxes, LLM translation, inpainting to wipe the original text, and overlay of the translation in Indic fonts. I built it in notebooks so I could compare engines side by side: Tesseract, EasyOCR, Google Vision and Azure AI Vision for OCR, Claude, Google Translate, NLLB and IndicTrans2 for translation, and OpenCV and LaMa for inpainting. Translation and text placement work well; keeping the exact layout on dense pages is the part I'm still improving.
+</p>
+<div class="proj-links">
+<a class="proj-link" href="https://github.com/Tirupathiraopatnala/content-translation-agent" target="_blank">View on GitHub &rarr;</a>
+</div>
+<div class="proj-pills">
+<span class="pill">OCR</span><span class="pill">Tesseract</span><span class="pill">EasyOCR</span><span class="pill">Azure AI Vision</span><span class="pill">Claude</span><span class="pill">IndicTrans2</span><span class="pill">OpenCV</span><span class="pill">Python</span>
 </div>
 </div>
 
