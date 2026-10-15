@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Tirupathirao Patnala — AI &amp; Data Engineer</title>
+<title>Tirupathirao Patnala | AI &amp; Data Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet"/>
@@ -166,6 +166,9 @@ nav{padding:0 20px}.nav-links{display:none}
 <span class="chip">Vector Search</span>
 <span class="chip">NL2SQL</span>
 <span class="chip">Semantic Kernel</span>
+<span class="chip">Azure AI Foundry</span>
+<span class="chip">Copilot Studio</span>
+<span class="chip">Microsoft Fabric</span>
 <span class="chip">FastAPI</span>
 <span class="chip">Python</span>
 <span class="chip">SQL</span>
@@ -195,6 +198,58 @@ nav{padding:0 20px}.nav-links{display:none}
 <p class="section-eyebrow reveal">Portfolio</p>
 <h2 class="section-title reveal">Key <em>Projects</em></h2>
 <div class="projects-grid">
+
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">PM Agent</p>
+<span class="proj-type">Agentic AI + NL2SQL</span>
+</div>
+<p class="proj-desc">
+A human-in-the-loop project management assistant that <strong>two client teams use to manage their work updates</strong>. The agent can act, but write actions wait for a person to approve them. Built on <strong>Claude through Azure AI Foundry</strong>. The data side started as a multi-prompt NL2SQL pipeline, and I collapsed it into a single tool-use design where the model writes SQL directly through a <code>query_database</code> tool. The piece the whole thing leans on is a literal-stripping guard on the generated SQL, which is what made that simplification safe.
+</p>
+<div class="proj-pills">
+<span class="pill">Claude</span><span class="pill">Azure AI Foundry</span><span class="pill">Tool Use</span><span class="pill">NL2SQL</span><span class="pill">Human-in-the-Loop</span><span class="pill">Agentic AI</span>
+</div>
+</div>
+
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">Fabric Triage Agent</p>
+<span class="proj-type">Agentic Ops</span>
+</div>
+<p class="proj-desc">
+A LangGraph agent that watches our <strong>Microsoft Fabric dev and prod workspaces</strong>. When something breaks, it collects the context, diagnoses the failure and recommends a fix in <strong>about 3 minutes</strong>. Doing the same by hand used to take 30 minutes or more. It never changes anything on its own: an engineer reviews the recommendation and either applies it in the workspace or raises a PR in Azure DevOps.
+</p>
+<div class="proj-pills">
+<span class="pill">LangGraph</span><span class="pill">Microsoft Fabric</span><span class="pill">Azure DevOps</span><span class="pill">Human-in-the-Loop</span><span class="pill">Agentic AI</span>
+</div>
+</div>
+
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">Ontology Knowledge Layer and Q&amp;A Agent</p>
+<span class="proj-type">Knowledge Layer + Agent</span>
+</div>
+<p class="proj-desc">
+An ontology model over the operational data of a data center business: the core entities, how they relate to each other, and an agent that answers questions on top of it. The idea is a knowledge layer that understands the business, not just the tables. I demoed it to the owner of the <strong>Power BI dashboards</strong> for the same data so we could compare it directly against the existing semantic models.
+</p>
+<div class="proj-pills">
+<span class="pill">Ontology Modelling</span><span class="pill">Knowledge Layer</span><span class="pill">Agentic Q&amp;A</span><span class="pill">Power BI</span>
+</div>
+</div>
+
+<div class="proj-card reveal">
+<div class="proj-header">
+<p class="proj-title">Azure Synapse to Microsoft Fabric Migration</p>
+<span class="proj-type">Data Platform</span>
+</div>
+<p class="proj-desc">
+Part of the team moving a company data warehouse from <strong>Azure Synapse to Microsoft Fabric</strong>. I built the source connections for <strong>Salesforce, Oracle Fusion and Carma</strong>. My Fabric work around it covers Dataflows Gen2, Git integration and deployment pipelines, REST API automation, Event Hubs and Azure Functions integrations, Purview lineage and audit, workspace roles, sensitivity labels and masking, pipeline tests, and a capacity usage dashboard that fed into capacity and cost tuning.
+</p>
+<div class="proj-pills">
+<span class="pill">Microsoft Fabric</span><span class="pill">Dataflows Gen2</span><span class="pill">Fabric REST API</span><span class="pill">Purview</span><span class="pill">Event Hubs</span><span class="pill">Azure DevOps CI/CD</span>
+</div>
+</div>
 
 <div class="proj-card reveal">
 <div class="proj-header">
@@ -260,10 +315,10 @@ Enterprise chatbot that routes queries across internal and external knowledge so
 <span class="proj-type">NL2SQL + Visualisation</span>
 </div>
 <p class="proj-desc">
-Copilot that lets non-technical users query enterprise data in plain English and get <strong>interactive charts</strong> back. Four-plugin architecture: table selection, filter resolution via vector search, schema-grounded SQL generation, and execution. Results render as interactive visualisations rather than raw rows.
+Copilot that lets non-technical users query enterprise data in plain English and get <strong>interactive charts</strong> back. Four-plugin architecture: table selection, filter resolution via vector search, schema-grounded SQL generation, and execution. Results render as interactive visualisations rather than raw rows. It also supports <strong>NL2DAX</strong>. More than <strong>20 stakeholders use it regularly</strong>; before it, they either went through the support team or queried the database themselves.
 </p>
 <div class="proj-pills">
-<span class="pill">Semantic Kernel</span><span class="pill">Vector Search</span><span class="pill">Plotly</span><span class="pill">Dash</span><span class="pill">Postgres</span>
+<span class="pill">Semantic Kernel</span><span class="pill">Vector Search</span><span class="pill">DAX</span><span class="pill">Plotly</span><span class="pill">Dash</span><span class="pill">Postgres</span>
 </div>
 </div>
 
@@ -273,7 +328,7 @@ Copilot that lets non-technical users query enterprise data in plain English and
 <span class="proj-type">Conversational AI</span>
 </div>
 <p class="proj-desc">
-Conversational assistant for sales teams to get instant answers on product availability, capacity and compliance during live customer calls. Evaluated three frameworks (Copilot Studio, LangChain, Semantic Kernel) before committing. Each dataset gets a dedicated vector index with <strong>per-tool retrieval</strong> and runtime query routing.
+Conversational assistant for sales teams to get instant answers on product availability, capacity and compliance during live customer calls. I evaluated <strong>Copilot Studio, LangChain and Semantic Kernel</strong> side by side before choosing Semantic Kernel. Each dataset gets a dedicated vector index with <strong>per-tool retrieval</strong> and runtime query routing.
 </p>
 <div class="proj-pills">
 <span class="pill">Semantic Kernel</span><span class="pill">Vector Search</span><span class="pill">Cosmos DB</span><span class="pill">Streamlit</span><span class="pill">Power BI</span>
@@ -371,7 +426,7 @@ Interactive web app to compare and analyse IPL team performances across 16 seaso
 <p class="tl-date">Jul 2023 – Present</p>
 <p class="tl-role">Senior Software Engineer (AI and Data)</p>
 <p class="tl-company">IT Services · Hyderabad, India</p>
-<p class="tl-desc">Designing and shipping production Generative AI: agentic orchestrators with human approval on write actions, RAG systems, NL2SQL copilots, MCP integrations, and the data platform work underneath them.</p>
+<p class="tl-desc">Designing and shipping production Generative AI: agentic orchestrators with human approval on write actions, RAG systems, NL2SQL copilots, MCP integrations, and the data platform work underneath them. On the data side, I'm part of a warehouse migration from Azure Synapse to Microsoft Fabric, and I'm rebuilding SQL Server logic as dbt models in Snowflake for a Salesforce platform migration.</p>
 </div>
 </div>
 
@@ -402,7 +457,7 @@ Interactive web app to compare and analyse IPL team performances across 16 seaso
 <div class="tl-edu">
 <span class="tl-edu-icon">🎓</span>
 <div>
-<p class="tl-edu-title">B.Tech — Vasireddy Venkatadri Institute of Technology (VVIT)</p>
+<p class="tl-edu-title">B.Tech in CSE, Vasireddy Venkatadri Institute of Technology (VVIT)</p>
 <p class="tl-edu-sub">CGPA: 8.21</p>
 </div>
 </div>
@@ -426,9 +481,21 @@ Interactive web app to compare and analyse IPL team performances across 16 seaso
 <div class="skill-pills">
 <span class="pill">LLMs</span><span class="pill">RAG</span>
 <span class="pill">Agentic Systems</span><span class="pill">Tool Calling</span>
-<span class="pill">Prompt Engineering</span><span class="pill">NL2SQL</span>
+<span class="pill">Prompt Engineering</span><span class="pill">NL2SQL / NL2DAX</span>
 <span class="pill">Embeddings</span><span class="pill">LLM Evaluation</span>
-<span class="pill">Human-in-the-Loop</span>
+<span class="pill">Human-in-the-Loop</span><span class="pill">Fine-tuning</span>
+<span class="pill">Structured Outputs</span>
+</div>
+</div>
+
+<div class="skill-card reveal">
+<div class="skill-icon">🧩</div>
+<p class="skill-title">Microsoft AI Platform</p>
+<div class="skill-pills">
+<span class="pill">Azure AI Foundry</span><span class="pill">Copilot Studio</span>
+<span class="pill">M365 Copilot Extensions</span><span class="pill">Graph Connectors</span>
+<span class="pill">Fabric Data Agents</span><span class="pill">Azure AI Services</span>
+<span class="pill">Document Intelligence</span><span class="pill">Azure ML / MLflow</span>
 </div>
 </div>
 
@@ -440,6 +507,7 @@ Interactive web app to compare and analyse IPL team performances across 16 seaso
 <span class="pill">Semantic Kernel</span><span class="pill">MCP</span>
 <span class="pill">Prompt Flow</span><span class="pill">DeepEval</span>
 <span class="pill">Chainlit</span><span class="pill">Streamlit</span>
+<span class="pill">Claude Code</span><span class="pill">GitHub Copilot</span>
 </div>
 </div>
 
@@ -450,6 +518,41 @@ Interactive web app to compare and analyse IPL team performances across 16 seaso
 <span class="pill">Azure OpenAI</span><span class="pill">Claude</span>
 <span class="pill">Azure AI Search</span><span class="pill">FAISS</span>
 <span class="pill">Chroma</span><span class="pill">Hybrid Retrieval</span>
+<span class="pill">Re-ranking</span><span class="pill">ACL Filtering</span>
+</div>
+</div>
+
+<div class="skill-card reveal">
+<div class="skill-icon">🏗️</div>
+<p class="skill-title">Microsoft Fabric</p>
+<div class="skill-pills">
+<span class="pill">Dataflows Gen2</span><span class="pill">Git Integration</span>
+<span class="pill">Deployment Pipelines</span><span class="pill">Fabric REST API</span>
+<span class="pill">Real-Time Intelligence / KQL</span><span class="pill">Purview</span>
+<span class="pill">Sensitivity Labels</span><span class="pill">Capacity Tuning</span>
+</div>
+</div>
+
+<div class="skill-card reveal">
+<div class="skill-icon">📊</div>
+<p class="skill-title">Data Engineering</p>
+<div class="skill-pills">
+<span class="pill">Azure Synapse</span><span class="pill">Azure Data Factory</span>
+<span class="pill">Databricks</span><span class="pill">PySpark</span>
+<span class="pill">Spark Streaming</span><span class="pill">Delta / Parquet</span>
+<span class="pill">dbt</span><span class="pill">Snowflake</span>
+<span class="pill">Fivetran</span><span class="pill">Event Hubs</span>
+<span class="pill">SCD Type 2</span><span class="pill">Star Schema</span>
+</div>
+</div>
+
+<div class="skill-card reveal">
+<div class="skill-icon">📈</div>
+<p class="skill-title">Analytics and BI</p>
+<div class="skill-pills">
+<span class="pill">Power BI</span><span class="pill">DAX</span>
+<span class="pill">Semantic Models</span><span class="pill">KPI Design</span>
+<span class="pill">Plotly / Dash</span>
 </div>
 </div>
 
@@ -457,9 +560,11 @@ Interactive web app to compare and analyse IPL team performances across 16 seaso
 <div class="skill-icon">☁️</div>
 <p class="skill-title">Cloud and Infrastructure</p>
 <div class="skill-pills">
-<span class="pill">Kubernetes</span><span class="pill">Azure</span>
+<span class="pill">Azure</span><span class="pill">Kubernetes</span>
 <span class="pill">Docker</span><span class="pill">Terraform</span>
-<span class="pill">GitHub Actions</span><span class="pill">Key Vault</span>
+<span class="pill">Azure Functions</span><span class="pill">Logic Apps</span>
+<span class="pill">Container Apps</span><span class="pill">Key Vault</span>
+<span class="pill">GitHub Actions</span><span class="pill">Azure DevOps</span>
 <span class="pill">Entra ID / OAuth2</span>
 </div>
 </div>
@@ -468,21 +573,10 @@ Interactive web app to compare and analyse IPL team performances across 16 seaso
 <div class="skill-icon">💻</div>
 <p class="skill-title">Languages and Backend</p>
 <div class="skill-pills">
-<span class="pill">Python</span><span class="pill">SQL</span>
+<span class="pill">Python</span><span class="pill">SQL / T-SQL</span>
 <span class="pill">FastAPI</span><span class="pill">REST APIs</span>
 <span class="pill">SSE</span><span class="pill">Postgres</span>
 <span class="pill">Cosmos DB</span>
-</div>
-</div>
-
-<div class="skill-card reveal">
-<div class="skill-icon">📊</div>
-<p class="skill-title">Data Engineering</p>
-<div class="skill-pills">
-<span class="pill">Azure Synapse</span><span class="pill">Microsoft Fabric</span>
-<span class="pill">PySpark</span><span class="pill">Delta / Parquet</span>
-<span class="pill">ETL / ELT</span><span class="pill">Data Modelling</span>
-<span class="pill">Power BI</span>
 </div>
 </div>
 
